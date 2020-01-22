@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ImagemAcao.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Cabeçalho-->
+            <Style TargetType="StackLayout" x:Key="Cabecalho">
+                <Setter Property="BackgroundColor" Value="#F2C14E"/>
+                <Setter Property="Padding" Value="10"/>
+            </Style>    
+            <Style TargetType="Label" x:Key="CabecalhoTtulo">
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+            </Style>
+    
+            <!--Estilo para o fundo-->
+            <Style TargetType="StackLayout" x:Key="Container">
+                <Setter Property="BackgroundColor" Value="#9917b3" />
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            </Style>
+
+            <!--Estilos para nossos botões-->
+            <Style TargetType="Button" >
+                <Setter Property="BackgroundColor" Value="#b58200" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <!--Quadrado do nosso jogo-->
+            <Style x:Key="EstiloEspecial" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="#a760b5"/>
+                <Setter Property="Padding" Value="10" />
+            </Style>
+            
+            
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#b6a8ff"/> <!--Cor para nossa texto da nossa label-->
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:CarregarPaginaUtil ="clr-namespace:ImagemAcao.View.Util"
+             xmlns:CarregarCabecalho ="clr-namespace:ImagemAcao.View.Util"
+             mc:Ignorable="d"
+             x:Class="ImagemAcao.View.Jogo">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <CarregarPaginaUtil:ConversorBindingContatenar x:Key="ValorDeContenacao"/>
+            <!--Aqui abri o arquivo da pagina util-->
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <CarregarCabecalho:Cabecalho/>
+                <StackLayout Style="{StaticResource Container}">
+                    <Frame OutlineColor="#b6a8ff" VerticalOptions="FillAndExpand" Padding="0">
+                        <!--O frame é para criar a borda -->
+                        <StackLayout Style="{StaticResource EstiloEspecial}">
+                            <StackLayout Orientation="Horizontal" >
+                                <Label Text="{Binding NumeroGrupao}"/>
+                                <Label Text="{Binding NomeGrupo}"/>
+                            </StackLayout>
+                            <Label Text="{Binding PalavraPontuacao, Converter={StaticResource ValorDeContenacao}}"/>
+                            <Label Text="{Binding Palavra}" HorizontalOptions="CenterAndExpand" FontSize="60" FontAttributes="Bold"/>
+                            <Button Text="Mostra" IsVisible="{Binding PalavraTrueFalse}" Command="{Binding MostraPalavra}" />
+                        </StackLayout>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="FillAndExpand">
+
+                        <StackLayout IsVisible="{Binding StackLayoutTempoTrueFalse}" VerticalOptions="FillAndExpand">
+                            <Label Text="{Binding TextoContagem}"  FontSize="100" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" />
+                            <Label Text="seg"  HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Button Text="ACERTOU" HorizontalOptions="Center" BackgroundColor="Green" TextColor="White" Command="{Binding Acertou}"/>
+                                <Button Text="ERROU" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" Command="{Binding Errou}"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Button IsVisible="{Binding StackLayoutIniciarTrueFalse}"  Text="Iniciar" Command="{Binding Iniciar}"/>
+                    </StackLayout>
+                    <Label Text="FEITO POR YURI NABAIA" TextColor="Gray" FontSize="15" FontAttributes="Bold"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

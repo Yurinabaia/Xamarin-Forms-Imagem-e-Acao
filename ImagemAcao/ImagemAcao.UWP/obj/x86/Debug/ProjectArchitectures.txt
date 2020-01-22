@@ -1,0 +1,1 @@
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao.UWP\ImagemAcao.UWP.csproj;x86

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:CarregarCabecalho ="clr-namespace:ImagemAcao.View.Util"
+             mc:Ignorable="d"
+             x:Class="ImagemAcao.View.Inicio">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <CarregarCabecalho:Cabecalho/>
+                <StackLayout Style="{StaticResource Container}">
+                    <Label Text="{Binding ErroDD}" TextColor="Red"/>
+                    <Label Text="Nome do Grupo 1" />
+                    <Entry Placeholder="(Opcional)" Text="{Binding Jogo.grupo1.Nome}"/>
+                    <Label Text="Nome do Grupo 2"/>
+                    <Entry Placeholder="(Opcional)" Text="{Binding Jogo.grupo2.Nome}"/>
+                    <Label Text="Nivel"/>
+                    <Picker SelectedItem="{Binding Jogo.Niveis}" SelectedIndex="{Binding Jogo.NivelNumerico}">
+                        <Picker.Items>
+                            <x:String>Aleatório</x:String>
+                            <x:String>Fácil</x:String>
+                            <x:String>Medio</x:String>
+                            <x:String>Dificil</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <!--O Picker seria como se fosse um ComboBox-->
+                    <Label Text="Tempo de cada palavras(seg)"/>
+                    <Entry Text="{Binding Jogo.TempoPalavra}" Keyboard="Numeric" />
+                    <Label Text="Rodadas"/>
+                    <Entry Text="{Binding Jogo.Rodadas}" Keyboard="Numeric"/>
+
+                    <!--Nos elementos que tem o Binding serve para busca a informação na classe 
+                que se encontra na pasta Model, porem este nomes devem ser o mesmo
+                que está na classe Model, com letras em Caixa alta e nome certo-->
+                    <Button Text="Inciar" Command="{Binding IniciarJogo}"/>
+                    <!--No Button tem um bindig especial pois nele tem que ter criado um command
+                na pasta ViewModel arquivo InicioViewModel.cs, command significa um comando-->
+
+                    <!--Todo elemento que possuir o Bindg sera alterado, o bindig serve quando 
+                o elemento não tem um valor fixo, vai depender o que usuario digitar-->
+                    <Label Text="FEITO POR YURI NABAIA" TextColor="Gray" FontSize="15" FontAttributes="Bold"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

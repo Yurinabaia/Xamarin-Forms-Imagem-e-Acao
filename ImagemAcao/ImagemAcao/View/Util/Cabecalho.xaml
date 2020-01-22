@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ImagemAcao.View.Util.Cabecalho">
+    <ContentView.Content>
+        <StackLayout Style="{StaticResource Cabecalho}" >
+            <Label Text="Imagem  Ação " Style="{StaticResource CabecalhoTtulo}" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="20"/>
+            <Label Text="Sair" HorizontalOptions="End" TextColor="Blue" FontSize="13" FontAttributes="Bold" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SaindoDaPagian" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

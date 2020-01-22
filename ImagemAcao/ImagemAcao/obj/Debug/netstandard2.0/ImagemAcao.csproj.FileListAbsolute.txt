@@ -1,0 +1,16 @@
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\ImagemAcao.csprojAssemblyReference.cache
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\View\Inicio.xaml.g.cs
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\View\Jogo.xaml.g.cs
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\View\Resultado.xaml.g.cs
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\ImagemAcao.AssemblyInfoInputs.cache
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\ImagemAcao.AssemblyInfo.cs
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\bin\Debug\netstandard2.0\ImagemAcao.deps.json
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\bin\Debug\netstandard2.0\ImagemAcao.dll
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\bin\Debug\netstandard2.0\ref\ImagemAcao.dll
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\bin\Debug\netstandard2.0\ImagemAcao.pdb
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\ImagemAcao.dll
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\ref\ImagemAcao.dll
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\ImagemAcao.pdb
+C:\Users\cida_\source\repos\ImagemAcao\ImagemAcao\ImagemAcao\obj\Debug\netstandard2.0\View\Util\Cabecalho.xaml.g.cs
